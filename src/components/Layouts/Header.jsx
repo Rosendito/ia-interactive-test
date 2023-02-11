@@ -4,10 +4,7 @@ import MobileNavigation from './MobileNavigation'
 
 const Header = () => {
   const [isShownMobileNavigation, setIsShownMobileNavigation] = useState(false)
-  const showMobileNavigation = useCallback(
-    () => setIsShownMobileNavigation(true),
-    [isShownMobileNavigation]
-  )
+  const showMobileNavigation = () => setIsShownMobileNavigation(true)
   const hideMobileNavigation = useCallback(
     () => setIsShownMobileNavigation(false),
     [isShownMobileNavigation]

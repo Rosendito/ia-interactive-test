@@ -22,9 +22,7 @@ const MobileNavigation = ({ isShowing, hide }) => {
               &#x2715;
             </button>
           </div>
-          <h2 className="text--size-xl text--color-primary text--light">
-            Menú
-          </h2>
+          <h2 className="mobile-navigation__title">Menú</h2>
 
           <ul className="mobile-navigation-list">
             <li>
