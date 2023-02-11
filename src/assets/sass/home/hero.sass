@@ -2,7 +2,7 @@
   position: relative
   background: linear-gradient(#F9E6E6 0%, #EBACAC 100%)
   padding-top: calc(80px + #{$pad-5}) // header height + 24px
-  padding-bottom: calc(20% + #{$pad-5})
+  padding-bottom: calc(72px + #{$pad-5})
 
   &::after
     content: ''
@@ -14,10 +14,32 @@
     clip-path: polygon(0 0%, 0 0, 100% 100%, 0% 100%)
     background: white
 
+  +breakpoint('xl')
+    padding-bottom: calc(72px + #{$pad-8})
+
 .home-hero__inner
   display: flex
   flex-direction: column
   row-gap: $pad-6
+
+  +breakpoint('lg')
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-end
+    padding-left: $pad-10
+    padding-right: $pad-10
+
+  +breakpoint('xl')
+    padding-left: $pad-11
+    padding-right: $pad-11
+
+  +breakpoint('2xl')
+    padding-left: $pad-13
+    padding-right: $pad-13
+
+  +breakpoint('3xl')
+    padding-left: $pad-14
+    padding-right: $pad-14
 
 .home-hero__image
   display: flex
@@ -29,33 +51,54 @@
     height: auto
     filter: drop-shadow(20px 40px 30px rgba($dark, 0.25))
 
+  +breakpoint('lg')
+    width: 30%
+
+    img
+      width: 100%
+
+  +breakpoint('xl')
+    width: 25%
+
+.home-hero__content
+  +breakpoint('lg')
+    width: 60%
+
 .home-hero-select
   display: flex
   align-items: center
   justify-content: flex-center
   column-gap: $pad-2
 
-.home-hero-select__label
-  font-size: $size-sm
+  &__label
+    font-size: $size-sm
 
-.home-hero-select__list
-  display: flex
-  column-gap: $pad-3
+  &__list
+    display: flex
+    column-gap: $pad-3
 
-.home-hero-select__item
-  display: block
-  font-size: $size-sm
-  font-weight: 300
-  padding: $pad-1 $pad-3
-  border: solid 1px $light
-  color: $dark
-  border-radius: 999px
-  transition: all 150ms linear
+  &__item
+    display: block
+    font-size: $size-sm
+    font-weight: 300
+    padding: $pad-1 $pad-3
+    border: solid 1px $light
+    color: $dark
+    border-radius: 999px
+    transition: all 150ms linear
 
-  &--active,
-  &:hover
-    background: rgba(#FF0000, 0.1)
-    border-color: rgba(#FF0000, 0.1)
+    &--active,
+    &:hover
+      background: rgba(#FF0000, 0.1)
+      border-color: rgba(#FF0000, 0.1)
+
+  +breakpoint('3xl')
+    &__label
+      font-size: $size-base
+
+    &__item
+      font-size: $size-base
+      padding: $pad-2 $pad-4
 
 .home-hero-detail
   margin-top: $pad-5
@@ -69,10 +112,52 @@
   &__description
     font-size: $size-sm
     font-weight: 300
+    line-height: 1.5
 
   &__button
+    display: flex
+    justify-content: center
     margin-top: $pad-4
-    text-align: center
+
+    .button
+      width: 100%
+      text-align: center
+
+  +breakpoint('lg')
+    &__title
+      font-size: $size-2xl
+      margin-bottom: $pad-4
+
+    &__description
+      font-size: $size-base
+
+    &__button
+      justify-content: flex-start
+      margin-top: $pad-5
+
+      .button
+        width: auto
+        text-align: left
+
+  +breakpoint('2xl')
+    &__title
+      font-size: $size-3xl
+
+    &__button
+      .button
+        padding-left: $pad-8
+        padding-right: $pad-8
+
+  +breakpoint('3xl')
+    &__title
+      font-size: $size-4xl
+      margin-bottom: $pad-5
+
+    &__description
+      font-size: $size-lg
+
+    &__button
+      margin-top: $pad-6
 
 .home-hero-detail-ribbons
   display: flex
@@ -86,9 +171,20 @@
     width: auto
     height: $pad-8
 
+  +breakpoint('lg')
+    justify-content: flex-start
+
 .home-hero__skip-button
   position: absolute
   bottom: 2.5%
   left: 50%
   transform: translateX(-50%)
   z-index: 10
+
+  +breakpoint('xl')
+    .button
+      padding: $pad-4
+
+      svg
+        width: $pad-5
+        height: auto

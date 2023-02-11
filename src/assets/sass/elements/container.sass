@@ -1,3 +1,25 @@
 .container
+  margin-left: auto
+  margin-right: auto
   padding-left: $pad-5
   padding-right: $pad-5
+
+  +breakpoint('lg')
+    max-width: 1024px
+    padding-left: $pad-8
+    padding-right: $pad-8
+
+  +breakpoint('xl')
+    max-width: 1280px
+    padding-left: $pad-9
+    padding-right: $pad-9
+
+  +breakpoint('2xl')
+    max-width: 1536px
+    padding-left: $pad-10
+    padding-right: $pad-10
+
+  +breakpoint('3xl')
+    max-width: 1800px
+    padding-left: $pad-11
+    padding-right: $pad-11

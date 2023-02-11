@@ -21,6 +21,12 @@ $pad-5: 1.5rem
 $pad-6: 2rem
 $pad-7: 3rem
 $pad-8: 4rem
+$pad-9: 6rem
+$pad-10: 8rem
+$pad-11: 10rem
+$pad-12: 12rem
+$pad-13: 16rem
+$pad-14: 20rem
 
 // Text sizes
 $size-sm: 0.875rem
@@ -28,7 +34,14 @@ $size-base: 1rem
 $size-lg: 1.25rem
 $size-xl: 1.5rem
 $size-2xl: 2rem
-$size-3xl: 3rem
+$size-3xl: 2.5rem
+$size-4xl: 3rem
 
 // breakpoints
-$breakpoints: ('sm': 640px, 'md': 768px, 'lg': 1024px, 'xl': 1280px, '2xl': 1536px)
+$breakpoints: ('sm': 640px, 'md': 768px, 'lg': 1024px, 'xl': 1280px, '2xl': 1536px, '3xl': 1800px)
+
+=breakpoint($name)
+  $bp: map-get($breakpoints, $name)
+
+  @media screen and (min-width: $bp)
+    @content

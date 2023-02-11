@@ -49,9 +49,11 @@ const Hero = () => {
               la opción si eres de las personas que siempre están activas y
               quieren probar algo sano, rico y práctico.
             </p>
-            <a href="" className="button home-hero-detail__button">
-              Comprar en Walmart
-            </a>
+            <div className="home-hero-detail__button">
+              <a href="https://walmart.com" class="button">
+                Comprar en Walmart
+              </a>
+            </div>
           </div>
           <div className="home-hero-detail-ribbons">
             <img
