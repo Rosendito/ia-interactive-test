@@ -1,0 +1,19 @@
+// sidebar transition
+.sidebar-transition
+  &-leave,
+  &-enter
+    transition: all 300ms ease-in-out
+
+  &-enter-from,
+  &-leave-to
+    transform: translateX(100%)
+
+// Fade transition
+.fade-transition
+  &-leave,
+  &-enter
+    transition: all 300ms linear
+
+  &-enter-from,
+  &-leave-to
+    opacity: 0

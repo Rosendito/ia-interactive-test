@@ -1,0 +1,56 @@
+.mobile-navigation
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+
+.mobile-navigation__wrapper
+  position: absolute
+  top: 0
+  right: 0
+  width: 75%
+  height: 100vh
+  background: linear-gradient(90deg, rgba($white, 0.65) 0%, $white 100%)
+  backdrop-filter: blur(5px)
+  z-index: 50
+
+.mobile-navigation__inner
+  padding: $pad-5 $pad-7
+
+.mobile-navigation__close
+  display: flex
+  justify-content: flex-end
+
+  button
+    padding: $pad-2
+    font-size: 1.5rem
+    font-weight: 300
+    color: $secondary
+
+.mobile-navigation__overlay
+  width: 100%
+  height: 100%
+
+.mobile-navigation__overlay-inner
+  width: 100%
+  height: 100%
+  background: rgba($dark, 0.25)
+
+.mobile-navigation-list
+  display: grid
+  row-gap: $pad-4
+  margin-top: $pad-8
+
+  &__item
+    color: $dark
+    font-weight: 400
+    font-size: 1rem
+
+    &:hover
+      color: $pink
+
+.mobile-navigation-socials
+  display: flex
+  margin-top: $pad-7
+  column-gap: $pad-3
