@@ -17,6 +17,16 @@ const Hero = () => {
 
   const [activeItem, setActiveItem] = useState(selectItems[0].id)
 
+  const goToNutrition = () => {
+    const nutrition = document.getElementById('informacion-nutrimental')
+
+    nutrition.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    })
+  }
+
   return (
     <section className="home-hero">
       <div className="container container--sm home-hero__inner">
@@ -92,6 +102,8 @@ const Hero = () => {
       <button
         type="button"
         className="button button--icon home-hero__skip-button"
+        title="Ir a Información Nutrimental"
+        onClick={goToNutrition}
       >
         <ArrowIcon />
       </button>

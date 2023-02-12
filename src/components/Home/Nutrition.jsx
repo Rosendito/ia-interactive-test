@@ -18,7 +18,7 @@ const data = [
 
 const Nutrition = () => {
   return (
-    <section className="home-nutrition">
+    <section className="home-nutrition" id="informacion-nutrimental">
       <div className="container container--xs">
         <h2 className="home-nutrition__title">Información Nutrimental</h2>
         <div className="home-nutrition__inner">
