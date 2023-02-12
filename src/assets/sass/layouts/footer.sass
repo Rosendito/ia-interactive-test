@@ -1,0 +1,85 @@
+.footer
+  padding-top: $pad-5
+  padding-bottom: $pad-5
+
+  &__inner
+    display: flex
+    flex-direction: column
+
+  &__vitalinea
+    display: none
+
+  +breakpoint('lg')
+    &__inner
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+
+    &__vitalinea
+      margin-left: auto
+      display: block
+      height: 30px
+      width: auto
+
+.footer-logos
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: $pad-4
+
+  &__danone
+    display: block
+    height: 48px
+    width: auto
+
+  &__vitalinea
+    display: block
+    height: 30px
+
+  +breakpoint('lg')
+    margin-bottom: 0
+
+    &__vitalinea
+      display: none
+
+.footer-content
+  display: flex
+  flex-direction: column
+  margin-left: -$pad-3
+  margin-right: -$pad-3
+
+  &__legals
+    display: flex
+    justify-content: center
+    margin-bottom: $pad-2
+
+    li
+      display: flex
+
+      &:not(:last-child)::after
+        display: block
+        content: '|'
+        font-size: $size-xxs
+        padding-left: $pad-1
+        padding-right: $pad-1
+
+    a
+      color: $dark
+      font-size: $size-xxs
+
+      &:hover
+        color: $pink
+
+  &__copyright
+    text-align: center
+    font-size: $size-xs
+
+  +breakpoint('lg')
+    margin-left: $pad-7
+    margin-right: 0
+
+    li::after,
+    a,
+    &__copyright
+      font-size: $size-sm
+      text-align: left

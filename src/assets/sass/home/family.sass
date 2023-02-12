@@ -28,7 +28,8 @@
   overflow-x: auto
   overflow-y: hidden
   scroll-behavior: smooth
-  margin: 0 (-$pad-5)
+  margin-left: -$pad-5
+  margin-right: -$pad-5
   scrollbar-width: none
   cursor: grab
 
@@ -36,6 +37,7 @@
     display: none
 
   &__item
+    display: block
     scroll-snap-align: start
     width: 42%
     flex-shrink: 0
@@ -48,15 +50,18 @@
       margin-bottom: $pad-3
 
     h3
+      display: block
       font-size: $size-sm
       font-weight: 300
       text-align: center
       color: $primary
 
   +breakpoint('lg')
-    margin: 0
+    margin-right: 0
+    margin-left: 0
 
     &__item
+      scroll-snap-align: none
       width: 33%
       padding: 0 $pad-5
 
