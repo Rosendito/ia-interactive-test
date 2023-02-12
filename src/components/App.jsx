@@ -1,5 +1,6 @@
 import Header from '@/components/Layouts/Header.jsx'
 import HomeHero from '@/components/Home/Hero'
+import HomeNutrition from '@/components/Home/Nutrition'
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <Header />
       <main>
         <HomeHero />
+        <HomeNutrition />
       </main>
     </div>
   )

@@ -1,0 +1,82 @@
+.home-nutrition
+  padding-top: $pad-8
+  padding-bottom: $pad-8
+
+  &__title
+    font-size: $size-lg
+    color: $primary
+    margin-bottom: $pad-5
+    letter-spacing: 2px
+    font-weight: 300
+
+  +breakpoint('lg')
+    &__title
+      letter-spacing: 4px
+      font-size: $size-xl
+      margin-bottom: $pad-7
+
+  +breakpoint('xl')
+    &__title
+      font-size: $size-2xl
+
+.home-nutrition__inner
+  display: flex
+  flex-direction: column
+  row-gap: $pad-7
+
+  +breakpoint('lg')
+    flex-direction: row
+    column-gap: $pad-7
+
+.home-nutrition-content
+  font-size: $size-sm
+  line-height: 1.4
+
+  &__tagline
+    font-weight: 400
+    margin-bottom: $pad-4
+
+  &__text
+    font-weight: 300
+
+    strong
+      display: block
+      font-weight: 400
+      margin-bottom: $pad-2
+
+  +breakpoint('lg')
+    width: 35%
+    flex-shrink: 0
+    font-size: $size-base
+
+    &__tagline
+      margin-bottom: $pad-7
+
+    &__text
+      strong
+        margin-bottom: $pad-4
+
+.home-nutrition-table
+  background: $gray
+
+  tbody
+    display: block
+    padding: $pad-4 $pad-1
+
+  th, td
+    padding: $pad-2 $pad-3
+    color: $primary
+    font-weight: 300
+
+  th
+    width: 80%
+    text-align: right
+
+  td
+    width: 20%
+
+  +breakpoint('lg')
+    width: 100%
+
+    th, td
+      padding: $pad-3 $pad-5
