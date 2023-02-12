@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <section className="home-hero">
-      <div className="container home-hero__inner">
+      <div className="container container--sm home-hero__inner">
         <div className="home-hero__image">
           <img src={FresaImg} alt="Vitalínea Bebible Fresa" />
         </div>
@@ -50,7 +50,7 @@ const Hero = () => {
               quieren probar algo sano, rico y práctico.
             </p>
             <div className="home-hero-detail__button">
-              <a href="https://walmart.com" class="button">
+              <a href="https://walmart.com" className="button">
                 Comprar en Walmart
               </a>
             </div>

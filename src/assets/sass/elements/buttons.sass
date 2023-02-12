@@ -7,7 +7,11 @@
   background: $primary
   leading-trimg: both
   text-edge: cap alphabetic
+  transition: all 150ms cubic-bezier(0.33, 1, 0.68, 1)
 
   &--icon
     padding: $pad-3
     border-radius: 999px
+
+  &:hover
+    background: lighten($primary, 10%)

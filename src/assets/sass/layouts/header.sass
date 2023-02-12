@@ -14,7 +14,7 @@
   align-items: center
   justify-content: space-between
 
-.header__menu
+.header__menu-button
   display: flex
   flex-direction: column
   justify-content: space-between
@@ -31,6 +31,39 @@
 
     &:nth-child(2)
       width: 75%
+
+  +breakpoint('lg')
+    display: none
+
+.header-end
+  display: none
+  align-items: center
+  column-gap: $pad-8
+
+  +breakpoint('lg')
+    display: flex
+
+  +breakpoint('xl')
+    column-gap: $pad-9
+
+.header-end-navbar
+  display: flex
+  column-gap: $pad-6
+
+  &__item
+    color: $dark
+    font-weight: 400
+    font-size: $size-base
+
+    &:hover
+      color: $pink
+
+  +breakpoint('xl')
+    column-gap: $pad-7
+
+.header-end-socials
+  display: flex
+  column-gap: $pad-5
 
 .header__logo
   display: block
