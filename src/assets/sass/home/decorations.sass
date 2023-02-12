@@ -1,0 +1,133 @@
+.berry-decoration
+  position: absolute
+  user-select: none
+  z-index: 5
+
+  &--hero-1
+    top: 0
+    right: 0
+    filter: blur(14px)
+    width: 300px
+    transform: translate(40%, -80%)
+
+    +breakpoint('lg')
+      transform: translate(0%, -80%)
+
+    +breakpoint('xl')
+      width: 400px
+      transform: translate(0%, -95%)
+
+  &--hero-2
+    display: none
+    top: 75%
+    right: 0
+    width: 120px
+    transform: translateX(-20%)
+    filter: drop-shadow(20px 40px 30px rgba($dark, 0.25))
+
+    +breakpoint('lg')
+      display: block
+
+    +breakpoint('xl')
+      top: 85%
+      transform: translateX(-10%)
+
+  &--hero-3
+    top: 0
+    left: 0
+    width: 120px
+    transform: translate(-50%, -20%)
+    filter: drop-shadow(20px 40px 30px rgba($dark, 0.25))
+
+    +breakpoint('lg')
+      transform: translate(40%, -90%)
+
+    +breakpoint('xl')
+      transform: translate(0%, -95%)
+
+  &--hero-4
+    display: none
+    bottom: 0
+    left: 0
+    width: 200px
+    transform: translate(-60%, 25%)
+    filter: blur(8px)
+
+    +breakpoint('lg')
+      display: block
+
+    +breakpoint('xl')
+      width: 320px
+      transform: translate(-60%, 35%)
+
+    +breakpoint('2xl')
+      width: 400px
+      transform: translate(-60%, 35%)
+
+  &--nutrition-1
+    display: none
+    top: 30%
+    left: 5%
+    width: 120px
+    transform: rotate(45deg)
+    filter: drop-shadow(20px 40px 30px rgba($dark, 0.25))
+
+    +breakpoint('xl')
+      display: block
+
+  &--nutrition-2
+    top: 10%
+    right: 0
+    width: 120px
+    transform: translateX(60%)
+    filter: blur(2px)
+
+    +breakpoint('lg')
+      transform: translateX(40%)
+
+    +breakpoint('xl')
+      transform: translateX(20%)
+
+    +breakpoint('2xl')
+      width: 180px
+      transform: translateX(20%)
+
+  &--nutrition-3
+    display: none
+    bottom: 0%
+    left: 0%
+    width: 140px
+    filter: drop-shadow(20px 40px 30px rgba($dark, 0.25))
+    transform: translate(-30%, 30%)
+
+    +breakpoint('lg')
+      display: block
+
+    +breakpoint('2xl')
+      width: 180px
+
+  &--family-1
+    display: none
+    top: (-$pad-10)
+    left: 0
+    width: 120px
+    transform: translate(10%, -40%)
+    filter: drop-shadow(20px 40px 30px rgba($dark, 0.25))
+
+    +breakpoint('xl')
+      display: block
+
+  &--family-2
+    display: none
+    top: 0
+    right: 0
+    width: 280px
+    filter: blur(4px)
+    transform: translate(40%, -40%)
+
+    +breakpoint('xl')
+      display: block
+
+    +breakpoint('2xl')
+      width: 320px
+      transform: translate(30%, -40%)

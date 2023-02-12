@@ -1,6 +1,7 @@
 import VitalineaBebibleImg from '@/assets/images/home/vitalinea-bebible.png'
 import VitalineaSinAzucarImg from '@/assets/images/home/vitalinea-sin-azucar.png'
 import VitalineaGriegoImg from '@/assets/images/home/vitalinea-griego.png'
+import Fresa01Img from '@/assets/images/fresa-01.png'
 
 const products = [
   { name: 'Vitalínea Griego', img: VitalineaGriegoImg },
@@ -11,7 +12,7 @@ const products = [
 const Family = () => {
   return (
     <section className="home-family">
-      <div className="container container--sm">
+      <div className="container container--sm home-family__inner">
         <h2 className="home-family__title">La familia vitalínea</h2>
         <div className="home-family-grid">
           {products.map(({ name, img }) => (
@@ -21,7 +22,19 @@ const Family = () => {
             </article>
           ))}
         </div>
+
+        <img
+          src={Fresa01Img}
+          alt="Fresa decoración 01"
+          className="berry-decoration berry-decoration--family-1"
+        />
       </div>
+
+      <img
+        src={Fresa01Img}
+        alt="Fresa decoración 01"
+        className="berry-decoration berry-decoration--family-2"
+      />
     </section>
   )
 }

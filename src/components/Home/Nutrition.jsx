@@ -1,3 +1,7 @@
+import Fresa01Img from '@/assets/images/fresa-01.png'
+import Fresa02Img from '@/assets/images/fresa-02.png'
+import Fresa03Img from '@/assets/images/fresa-03.png'
+
 const data = [
   { label: 'Contenido energético kJ/kcal', value: '413,2/97,9' },
   { label: 'Proteínas (g)', value: 5.3 },
@@ -44,6 +48,27 @@ const Nutrition = () => {
           </table>
         </div>
       </div>
+
+      <img
+        src={Fresa03Img}
+        alt="Fresa decoración 03"
+        className="berry-decoration berry-decoration--nutrition-1"
+        loading="lazy"
+      />
+
+      <img
+        src={Fresa01Img}
+        alt="Fresa decoración 01"
+        className="berry-decoration berry-decoration--nutrition-2"
+        loading="lazy"
+      />
+
+      <img
+        src={Fresa02Img}
+        alt="Fresa decoración 012"
+        className="berry-decoration berry-decoration--nutrition-3"
+        loading="lazy"
+      />
     </section>
   )
 }

@@ -3,6 +3,9 @@ import clsx from 'clsx'
 import FresaImg from '@/assets/images/home/fresa-bebible.png'
 import FMDRibbonImg from '@/assets/images/home/fmd-ribbon.png'
 import NoSugarRibbonImg from '@/assets/images/home/no-sugar-ribbon.png'
+import Fresa01Img from '@/assets/images/fresa-01.png'
+import Fresa02Img from '@/assets/images/fresa-02.png'
+import Fresa03Img from '@/assets/images/fresa-03.png'
 import ArrowIcon from '@/components/Icons/Arrow'
 
 const Hero = () => {
@@ -68,6 +71,22 @@ const Hero = () => {
             />
           </div>
         </div>
+
+        <img
+          src={Fresa02Img}
+          alt="Fresa decoración 02"
+          className="berry-decoration berry-decoration--hero-1"
+        />
+        <img
+          src={Fresa01Img}
+          alt="Fresa decoración 01"
+          className="berry-decoration berry-decoration--hero-2"
+        />
+        <img
+          src={Fresa03Img}
+          alt="Fresa decoración 03"
+          className="berry-decoration berry-decoration--hero-3"
+        />
       </div>
 
       <button
@@ -76,6 +95,12 @@ const Hero = () => {
       >
         <ArrowIcon />
       </button>
+
+      <img
+        src={Fresa01Img}
+        alt="Fresa decoración 01"
+        className="berry-decoration berry-decoration--hero-4"
+      />
     </section>
   )
 }
